@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #8e9eab;
+            text-align: center;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 24px;
+            text-align: left;
+            margin-left: 35%;
+        }
+
+        input {
+            width: 30%;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: #eef2f3;
+        }
+
+        button {
+            font-size: 26px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding: 12px 60px;
+            border: 2px solid black;
+            border-radius: 50px;
+            background-color: #eef2f3;
+        }
+
+        h2,
+        h1 {
+            text-align: left;
+            margin-left: 36%;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+
+    <form action="">
+        <p>Lazımı məbləği daxil edin:</p>
+        <input id="məbləğ" type="number">
+    </form>
+
+    <form action="">
+        <p>Kredit müddəti seçin:</p>
+        <input id="müddət" type="number">
+    </form>
+
+    <form action="">
+        <p>Faiz təyin edin:</p>
+        <input id="faiz" type="number">
+    </form>
+
+    <button onclick="Calc()">Hesabla</button>
+
+    <h2>İllik ümumi məbləğ: <span id="illik"> </span></h2>
+    <h1>Aylıq məbləğ: <span id="aylıq"> </span></h1>
+
+
+
+    <script src="Js/App.js"></script>
+</body>
+
+</html>
